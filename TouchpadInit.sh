@@ -1,8 +1,7 @@
 #/bin/bash
-
-synclient TouchpadOff=1 
-synclient HorizTwoFingerScroll=1 
-synclient TapButton1=1 
-synclient TapButton2=3 
-synclient TapButton3=2 
-
+source ~/.r809env
+#in ~/.r809env file
+#
+#r809_touchpad="Touchpad 1"
+#
+xinput set-prop "$r809_touchpad" 276 1 

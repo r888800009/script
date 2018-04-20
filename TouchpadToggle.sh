@@ -1,9 +1,15 @@
 #!/bin/bash
-if [[ -z "$(synclient|grep Touchpad|grep 0)" ]]; then
+source ~/.r809env
+#in ~/.r809env file
+#
+#r809_touchpad="Touchpad 1"
+#
+touchpad_state="$(xinput list-props "$r809_touchpad"|grep "Device Enabled"|awk '{print $4}')"
+if [[ $touchpad_state -eq 0  ]]; then
     notify-send "Touchpad Enable"               
-    synclient TouchpadOff=0
+    xinput enable "$r809_touchpad" 
 else
     notify-send "Touchpad Disable"
-    synclient TouchpadOff=1
+    xinput disable "$r809_touchpad" 
 fi
 
