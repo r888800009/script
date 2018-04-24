@@ -1,0 +1,9 @@
+[Unit]
+Description=auto sync taskwarrior
+
+[Timer] 
+OnBootSec=0min
+OnUnitActiveSec=3min
+Unit=task-sync.service
+[Install]
+WantedBy=timers.target

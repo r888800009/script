@@ -1,0 +1,8 @@
+[Unit]
+Description=auto sync taskwarrior
+
+[Service]
+ExecStart=/usr/bin/task sync    
+
+[Install]
+WantedBy=default.target
