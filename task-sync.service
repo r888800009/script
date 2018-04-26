@@ -2,7 +2,7 @@
 Description=auto sync taskwarrior
 
 [Service]
-ExecStart=/usr/bin/task sync    
-
+ExecStart=/usr/bin/task sync 
+StandardOutput=null 
 [Install]
 WantedBy=default.target
