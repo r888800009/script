@@ -1,6 +1,9 @@
 #!/bin/bash
 wifi_list=$(wpa_cli list_network| tail -n +3|cut -d$'\t' -f 1,2)
 wifi_id=$(echo "$wifi_list"|cut -d$'\t' -f2|dmenu -i -p 'wifi')
-wifi_id=$(echo "$wifi_list" | awk -v name="$wifi_id" '$0~name{print $1}')
-wpa_cli select_network $wifi_id
-wpa_cli save_config 
+if [[ ! -z "$wifi_id" ]]
+then
+    wifi_id=$(echo "$wifi_list" | awk -v name="$wifi_id" '$0~name{print $1}')
+    wpa_cli select_network $wifi_id
+    wpa_cli save_config 
+fi
