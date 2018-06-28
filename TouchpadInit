@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 source ~/.r809env
 #in ~/.r809env file
 #
