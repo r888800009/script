@@ -1,0 +1,8 @@
+#!/bin/bash
+desktop_new_name="$(zenity --entry --text='Please enter a new desktop name' --entry-text=$(bspc query -D -d focused --names))" 
+
+if [ $? == 0 ]
+then 
+    bspc desktop focused --rename "$desktop_new_name"
+fi 
+
