@@ -1,0 +1,6 @@
+#!/bin/bash
+
+desktop_new_name="$(zenity --entry --text='Please enter a new create desktop name' --entry-text="")" 
+
+bspc monitor -a "$desktop_new_name"
+
