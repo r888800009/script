@@ -1,0 +1,12 @@
+#!/bin/bash
+
+desktop_name=$(bspc query -D -d focused --names)
+desktop_id=$(bspc query -D -d focused)
+input_name="$(zenity --entry --text='Please enter a current desktop name to remove :'$desktop_name --entry-text="")" 
+
+if [ "$desktop_name" == "$input_name" ]
+then 
+    bspc desktop $desktop_id --remove
+fi 
+
+
