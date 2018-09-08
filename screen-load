@@ -1,0 +1,5 @@
+#/bin/bash
+source ~/.r809env 
+xrandr --output $monitor1 --auto --output $monitor2 $monitorOpt $monitor1 
+polybar-all-screen &
+feh --randomize --bg-fill ~/Pictures/Wallpapers/* &
