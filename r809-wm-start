@@ -1,6 +1,5 @@
 #!/bin/bash
 screen-load &
-sxhkd &
 compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc --unredir-if-possible --blur-background&
 dnust &
 fcitx-autostart &
