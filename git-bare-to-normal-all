@@ -1,0 +1,7 @@
+#!/bin/bash
+for dir in $(ls)                                                                                    ~/複製git/git
+do
+  cd $dir
+  git-bare-to-normal
+  cd ..
+done
