@@ -1,0 +1,11 @@
+#!/bin/bash
+read -p "Do you want to convert bare to normal at $PWD?(y/n)" -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    mkdir ./.git
+    mv HEAD branches config description hooks info objects refs ./.git
+    git config --local --bool core.bare false
+    git reset --hard
+    git config --local remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+fi
