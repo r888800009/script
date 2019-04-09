@@ -1,6 +1,6 @@
 #!/bin/bash
 screen-load &
-compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc --unredir-if-possible --blur-background&
+compton &
 dnust &
 fcitx-autostart &
 bash ~/bin/TouchpadInit  &
