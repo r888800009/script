@@ -3,5 +3,6 @@ screen-load &
 compton &
 dnust &
 fcitx-autostart &
+unclutter &
 bash ~/bin/TouchpadInit  &
 randr --dpi 120 &
