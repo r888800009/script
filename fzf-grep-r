@@ -1,0 +1,2 @@
+#!/bin/sh
+grep --line-buffered --color=never -r "" * | fzf
