@@ -1,2 +1,3 @@
 #!/bin/sh
-hugo -D server 
+hugo -D server &
+chromium http://localhost:1313/
