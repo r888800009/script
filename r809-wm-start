@@ -2,6 +2,7 @@
 screen-load &
 compton &
 dnust &
+guake &
 fcitx-autostart &
 unclutter &
 bash ~/bin/TouchpadInit  &
