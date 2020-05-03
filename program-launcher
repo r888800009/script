@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# rofi -show combi
+albert toggle
+
