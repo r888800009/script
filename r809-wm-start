@@ -6,3 +6,4 @@ unclutter &
 bash ~/bin/TouchpadInit  &
 randr --dpi 120 &
 setxkbmap -option "ctrl:nocaps" &
+albert &
