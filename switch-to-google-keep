@@ -1,0 +1,9 @@
+#!/bin/bash
+wmctrl -a 'Google Keep'
+
+ret=$?
+if [ $ret -ne 0 ]; then
+  xdg-open https://keep.google.com
+  sleep 4
+  wmctrl -a 'Google Keep'
+fi
