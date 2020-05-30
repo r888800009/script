@@ -6,4 +6,5 @@ unclutter &
 bash ~/bin/TouchpadInit  &
 randr --dpi 120 &
 setxkbmap -option "ctrl:nocaps" &
+xinput set-prop $mouse1 "libinput Accel Speed" 1
 albert &
