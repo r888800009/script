@@ -1,0 +1,3 @@
+#!/bin/bash
+curl https://raw.githubusercontent.com/Tallguy297/SimpleHTTPServerWithUpload/master/SimpleHTTPServerWithUpload.py -o /tmp/SimpleHTTPServerWithUpload.py
+python3 /tmp/SimpleHTTPServerWithUpload.py 8080
