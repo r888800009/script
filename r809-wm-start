@@ -1,6 +1,5 @@
 #!/bin/bash
 screen-load &
-compton &
 fcitx-autostart &
 unclutter &
 bash ~/bin/TouchpadInit  &
