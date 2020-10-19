@@ -3,6 +3,7 @@ screen-load &
 fcitx-autostart &
 unclutter &
 bash ~/bin/TouchpadInit  &
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
 randr --dpi 120 &
 setxkbmap -option "ctrl:nocaps" &
 xinput set-prop $mouse1 "libinput Accel Speed" 1
