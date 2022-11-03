@@ -1,0 +1,7 @@
+#!/bin/bash
+# reference
+# https://unix.stackexchange.com/questions/460069/collect-all-of-the-sar-data
+
+LC_TIME=en_US.utf8 
+paste <(sar -r $1 $2) <(sar -u $1 $2) <(sar -q $1 $2) <(sar -S $1 $2)
+
