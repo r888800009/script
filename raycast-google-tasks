@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title Open Google Task
+# @raycast.mode silent
+
+# Optional parameters:
+# @raycast.icon
+
+# refer: https://webapps.stackexchange.com/questions/127082/how-to-use-google-tasks-on-the-web-standalone
+
+'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --app='https://tasks.google.com/embed/?origin=https://calendar.google.com&fullWidth=1'
+

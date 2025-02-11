@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ $# -eq 0 ]
+then
+  echo "need tag"
+  echo 'ex: `linux-clone 5.13.4`'
+  exit 1
+fi
+echo v$1
+
+git clone --depth 1 --single-branch --branch v$1 git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git

@@ -1,3 +1,15 @@
 #!/bin/sh
+
+hugo
+if [ $? -ne 0 ]
+then
+  echo error
+  exit 1
+fi
+
 hugo -D server &
+
+echo start auto commit gitwitch
+gitwatch content &
+
 xdg-open http://localhost:1313/

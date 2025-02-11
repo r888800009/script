@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title Open Google Calendar
+# @raycast.mode silent
+
+# Optional parameters:
+# @raycast.icon
+
+'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --app='https://calendar.google.com'
