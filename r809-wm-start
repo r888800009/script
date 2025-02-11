@@ -8,3 +8,4 @@ randr --dpi 120 &
 setxkbmap -option "ctrl:nocaps" &
 xinput set-prop $mouse1 "libinput Accel Speed" 1
 albert &
+hideIt.sh -C 'Polybar' -d top --hover -w &
