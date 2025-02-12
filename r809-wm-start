@@ -1,5 +1,6 @@
 #!/bin/bash
 screen-load &
+picom &
 fcitx5 &
 unclutter &
 bash ~/bin/TouchpadInit  &
